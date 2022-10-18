@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        width: 640px;
+        height: 480px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: 1px solid #cccccc;
+      }
+
+      #collapse-button {
+        margin-top: 10px;
+        height: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <canvas
+        id="canvas"
+        width="640"
+        height="480"
+        oncontextmenu="return false;"
+      ></canvas>
+      <button id="collapse-button" type="button">Collapse lines</button>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
